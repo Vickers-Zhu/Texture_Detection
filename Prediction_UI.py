@@ -9,11 +9,11 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindowLuoandZhu")
-        MainWindow.resize(800, 600)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
+class Ui_LuoAndZhu(object):
+    def setupUi(self, LuoAndZhu):
+        LuoAndZhu.setObjectName("LuoAndZhu")
+        LuoAndZhu.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(LuoAndZhu)
         self.centralwidget.setObjectName("centralwidget")
         self.originalVIew = QtWidgets.QGraphicsView(self.centralwidget)
         self.originalVIew.setGeometry(QtCore.QRect(20, 0, 320, 280))
@@ -27,22 +27,22 @@ class Ui_MainWindow(object):
         self.labeledView = QtWidgets.QGraphicsView(self.centralwidget)
         self.labeledView.setGeometry(QtCore.QRect(460, 0, 320, 280))
         self.labeledView.setObjectName("labeledView")
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        LuoAndZhu.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(LuoAndZhu)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 22))
         self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        LuoAndZhu.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(LuoAndZhu)
         self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        LuoAndZhu.setStatusBar(self.statusbar)
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.retranslateUi(LuoAndZhu)
+        QtCore.QMetaObject.connectSlotsByName(LuoAndZhu)
 
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, LuoAndZhu):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.importImage.setText(_translate("MainWindow", "Import"))
-        self.predict.setText(_translate("MainWindow", "Predict"))
+        LuoAndZhu.setWindowTitle(_translate("LuoAndZhu", "LuoAndZhu"))
+        self.importImage.setText(_translate("LuoAndZhu", "Import"))
+        self.predict.setText(_translate("LuoAndZhu", "Predict"))
 
 

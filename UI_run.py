@@ -1,12 +1,12 @@
 from PyQt5 import QtWidgets, QtGui, QtCore
-from Prediction_UI import Ui_MainWindow
+from Prediction_UI import Ui_LuoAndZhu
 import cv2
 
 
 class mywindow(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         super(mywindow, self).__init__(parent=parent)
-        self.ui = Ui_MainWindow()
+        self.ui = Ui_LuoAndZhu()
         self.ui.setupUi(self)
         self.ui.importImage.clicked.connect(self.on_btn_import_clicked)
 
